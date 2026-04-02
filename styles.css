@@ -1,0 +1,111 @@
+/*{ box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; }*/
+
+  body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .card {
+    background: #111;
+    border: 2px solid #6e14ff;
+    border-radius: 20px;
+    padding: 40px 36px;
+    width: 360px;
+    box-shadow: 0 0 30px rgba(57,255,20,0.15);
+    text-align: center;
+  }
+
+  h1 {
+    color: #6e14ff;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .subtitle {
+    color: #555;
+    font-size: 0.82rem;
+    margin-bottom: 32px;
+  }
+
+  .field {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  label {
+    display: block;
+    color: #6e14ff;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    padding: 14px 16px;
+    background: #1a1a1a;
+    border: 1.5px solid #333;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: textfield;
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button { -webkit-appearance: none; }
+  input[type="number"]:focus {
+    border-color: #6e14ff;
+    box-shadow: 0 0 8px rgba(57,255,20,0.25);
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    margin: 4px 0 20px;
+    gap: 10px;
+  }
+  .divider hr { flex: 1; border: none; border-top: 1px solid #222; }
+  .divider span { color: #6e14ff; font-size: 1.1rem; }
+
+  .btn-reset {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    background: transparent;
+    border: 2px solid #6e14ff;
+    border-radius: 10px;
+    color: #6e14ff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  .btn-reset:hover {
+    background: #6e14ff;
+    color: #000;
+  }
+
+  .references {
+    margin-top: 28px;
+    background: #0d0d0d;
+    border: 1px solid #222;
+    border-radius: 10px;
+    padding: 14px 18px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .ref-item { text-align: center; }
+  .ref-label { color: #555; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; }
+  .ref-val { color: #6e14ff; font-size: 0.88rem; font-weight: 600; margin-top: 4px; }
